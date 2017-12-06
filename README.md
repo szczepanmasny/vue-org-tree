@@ -49,7 +49,7 @@ Once installed, it can be used in a template as simply as:
 ></vue-org-tree>
 ```
 
-## Data format
+### Data format
 
 Example of data for VueOrgTree:
 
@@ -81,3 +81,10 @@ var data = {
   }]
 };
 ```
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+## Contributing
+
+Pull requests are welcome

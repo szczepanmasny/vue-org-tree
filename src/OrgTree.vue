@@ -1,6 +1,6 @@
 <template>
     <div class="orgTree">
-        <ul>
+        <ul :style="style">
             <child-item :model="treeData" :append="append" :edit="edit" :remove="remove" :images="images">
             </child-item>
         </ul>
@@ -19,7 +19,6 @@
                 type: Object,
                 required: true
             },
-
             append: {
                 default: false,
                 type: Boolean
@@ -36,9 +35,23 @@
                 default: false,
                 type: Boolean
             },
+            treeWidth: {
+                default: '50000px',
+                type: String,
+                required: false
+            },
 
         },
-        data: () => ({})
+        data: () => ({}),
+        computed: {
+            style: function () {
+                var self = this;
+                var style = {
+                    width: self.treeWidth
+                }
+                return style
+            }
+        }
     }
 </script>
 <style>
@@ -50,5 +63,7 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         -khtml-user-select: none;
+        width: 100%;
+        overflow-x: auto;
     }
 </style>

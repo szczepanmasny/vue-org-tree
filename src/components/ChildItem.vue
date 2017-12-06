@@ -71,7 +71,7 @@
             images: {
                 default: false,
                 type: Boolean
-            },
+            }
         },
         data: function () {
             return {
@@ -94,7 +94,7 @@
             },
             changeType: function () {
                 if (!this.isFolder && this.append) {
-                    Vue.set(this.model, 'children', [])
+                    this.$set(this.model, 'children', [])
                     this.addChild()
                     this.open = true
                 }

@@ -1,6 +1,6 @@
 {
   "name": "vue-org-tree",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "A Vue.js component that creates organizational tree",
   "main": "dist/vue-org-tree.js",
   "scripts": {
@@ -8,10 +8,7 @@
   },
   "author": "Szczepan Masny",
   "license": "MIT",
-  "dependencies": {
-    "moment": "^2.18.1"
-  },
-
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
